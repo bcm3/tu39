@@ -1,0 +1,186 @@
+body{
+    background-color: #fff;
+}
+
+header {
+    position: fixed;
+    width: 130%;
+    height: 90px;
+    line-height: 50px;
+    opacity: 0.5;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.16);
+    border: 5px solid red;
+    z-index: 100;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+
+
+  .menutop{
+    text-align: center;
+    align-items: center;
+    border: 3px solid blue;
+    display: flex;
+  }
+  .carro > nav > ul > li{
+    list-style: none;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem 1rem;
+    border-right: 1px solid grey;
+}
+
+
+.compra{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    border:3px solid green;
+}
+
+.paso{
+    max-width: 100%;
+    height: auto;
+}
+
+.paso1{
+    width: auto; 
+    height: auto; 
+    background: #428bca;
+    opacity: 0.9;
+    border: solid grey 1px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.pasoRedondo{
+    position: absolute;
+    top: -60px;
+    width: 100px;
+    height: 100px;
+    background-color: #57b6b2;
+    border-radius: 40px;
+    padding-top: 25px;
+    font-size: 18px;
+    margin-left: -60px;
+    color: #fff;
+}
+
+.paso2{
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: auto; 
+    height: auto; 
+    background: #428bca;
+    opacity: 0.9;
+    border: solid grey 1px;
+}
+
+.menu{
+    border-top: 10px solid #c1c1c1;
+}
+
+  .menu > nav > ul > li {
+    list-style: none;
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #707070;
+    padding: 15px 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  section{
+    top: 200px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .content{
+    position: relative;
+    padding-bottom: 45px;
+    margin-top: -190px;
+    display: flex;
+  }
+
+  .compra{
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .headerSection{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+.logo{
+    height: 80px;
+    padding: 10px 0;
+}
+
+footer{
+    background-color: #003e52;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+}
+
+.container{
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.enlaces{
+    color: #84a2ab;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 44px 11.5px 0;
+    border-bottom: 1px solid #84a2ab; 
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.enlaces > ul{
+    list-style: none;
+    padding-left: 0;
+    font-size: 1em;
+    line-height: 30px;
+}
+
+.logofooter{
+    height: 55px;
+    margin-right: 13px;
+}
+
+.pie{
+    padding: 25.6px 0 25.9px;
+    align-items: center;
+    display: flex; /* LINEA */
+    justify-content: space-between;
+}
+
+.empresatexto{
+    color: #84a2ab;
+}
