@@ -9,20 +9,20 @@ header {
     line-height: 50px;
     opacity: 0.5;
     box-shadow: 0 0 8px 0 rgba(0,0,0,.16);
-    border: 5px solid red;
     z-index: 100;
     padding-right: 100px;
     padding-left: 100px;
+    top: 0;
+    background: #84a2ab
   }
-
 
 
   .menutop{
     text-align: center;
     align-items: center;
-    border: 3px solid blue;
     display: flex;
   }
+
   .carro > nav > ul > li{
     list-style: none;
     float: left;
@@ -32,28 +32,28 @@ header {
     border-right: 1px solid grey;
 }
 
-
 .compra{
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-    border:3px solid green;
+    align-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .paso{
-    max-width: 100%;
     height: auto;
 }
 
 .paso1{
     width: auto; 
-    height: auto; 
-    background: #428bca;
+    height: auto;
     opacity: 0.9;
-    border: solid grey 1px;
-    flex: 0 0 50%;
     max-width: 50%;
+    border-radius: 4px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.16);
+    opacity: 0.9;
 }
 
 .pasoRedondo{
@@ -61,12 +61,11 @@ header {
     top: -60px;
     width: 100px;
     height: 100px;
-    background-color: #57b6b2;
-    border-radius: 40px;
     padding-top: 25px;
     font-size: 18px;
     margin-left: -60px;
     color: #fff;
+    
 }
 
 .paso2{
@@ -74,9 +73,37 @@ header {
     max-width: 50%;
     width: auto; 
     height: auto; 
-    background: #428bca;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.16);
     opacity: 0.9;
-    border: solid grey 1px;
+
+}
+
+.colaboradores{
+    background-color: #fff;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.empresascolaboradoras{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.empresascolaboradoras > p{
+    text-align: center;
+    align-content: center;
+}
+
+.boletin{
+    padding-right: 150px;
+    padding-left: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    border-top: solid 2px grey
 }
 
 .menu{
@@ -102,8 +129,8 @@ header {
 
   section{
     top: 200px;
-    position: absolute;
     width: 100%;
+
   }
 
   .content{
@@ -120,10 +147,12 @@ header {
   }
 
   .headerSection{
+    margin-top: 250px;
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+    margin-bottom: 200px;
   }
   
 .logo{
@@ -136,10 +165,11 @@ footer{
     bottom: 0;
     right: 0;
     left: 0;
-    position: absolute;
+
     width: 100%;
     align-content: center;
     align-items: center;
+    z-index: -9999;
 }
 
 .container{
