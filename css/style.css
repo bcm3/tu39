@@ -10,9 +10,10 @@ header {
     box-shadow: 0 0 9px 0 rgba(0,0,4,.30);
     z-index: 100;
     padding-right: 100px;
-    padding-left: 100px;
     background: #fff;
     top: 0;
+    padding-left: 15%;
+    justify-content: center;
   }
 
     .menutoptexto{
@@ -30,7 +31,9 @@ header {
     justify-content: center
   }
 
-
+  .tomatoma{
+    flex-direction: column;
+  }
 
   .carro > nav > ul > li{
     list-style: none;
@@ -176,6 +179,12 @@ content{
     flex-wrap: wrap;
     display: flex;
   }
+
+  .headerR{
+       max-width: 1440px;
+  }
+ 
+
 
   .textoI{
     border-bottom: 2px solid #003e52;
