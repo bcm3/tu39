@@ -108,6 +108,7 @@ content{
     display: flex;
     flex-wrap: wrap;
     margin-left: 50px;
+    flex-direction: column;
 
 }
 
