@@ -93,6 +93,18 @@ header {
     padding-top: 15px;
 }
 
+.boton{
+    width: 250px; 
+    height: 100px; 
+    background-color: #c2e76b;
+    border-radius: 70px;
+    padding: 20px;
+    font-size: 18px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 
 .paso2 > h3 {
     padding-left: 15px;
