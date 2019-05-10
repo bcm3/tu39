@@ -7,20 +7,30 @@ header {
     position: fixed;
     width: 100%;
     line-height: 50px;
-    opacity: 0.5;
     box-shadow: 0 0 9px 0 rgba(0,0,4,.30);
     z-index: 100;
     padding-right: 100px;
     padding-left: 100px;
+    background: #fff;
     top: 0;
-    background: #84a2ab
   }
+
+    .menutoptexto{
+    color: #c1c1c1;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    }
 
   .menutop{
     text-align: center;
     align-items: center;
     display: flex;
+    justify-content: center
   }
+
+
 
   .carro > nav > ul > li{
     list-style: none;
@@ -31,30 +41,45 @@ header {
     border-right: 1px solid grey;
 }
 
+.carro > nav > ul > li:last-child{
+    border-right: 0;
+}
+
 .compra{
     display: flex;
     flex-wrap: wrap;
-
     align-content: center;
     text-align: center;
     align-items: center;
     padding: 32px;
+    justify-content: space-between;
 }
 
 .paso{
-    height: auto;
+    height: 450px;
 }
 
 .paso1{
     width: auto; 
     height: auto;
-    opacity: 0.9;
     max-width: 50%;
     border-radius: 4px;
-    box-shadow: 0 0 8px 0 rgba(0,0,0,.16);
-    opacity: 0.9;
+    box-shadow: 0 0 8px 0 rgba(35, 5, 5, 0.36);
+    opacity: 1.9;
     padding-top: 80px;
+}
+.paso2{
+    width: auto; 
+    height: auto; 
+    max-width: 50%;
+    border-radius: 4px;
+    box-shadow: 0 0 8px 0 rgba(35, 5, 5, 0.36);
+    opacity: 1.9;
+    padding-top: 80px;
+}
 
+content{
+    color: #f7f7f7;
 }
 
 .pasoRedondo{
@@ -62,21 +87,11 @@ header {
     height: 220px;
     background-color: #57b6b2;
     border-radius: 20px;
-    padding-top: 25px;
+    padding: 20px;
     font-size: 18px;
-    color: #fff;
+    color: #fff; 
 }
 
-.paso2{
-    max-width: 50%;
-    width: auto; 
-    height: auto; 
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0 0 8px 0 rgba(0,0,0,.16);
-    opacity: 0.9;
-    padding-top: 80px;
-}
 
 .colaboradores{
     background-color: #fff;
@@ -93,7 +108,7 @@ header {
 
 }
 
-.dos{
+.titulocolaboradores{
     margin-bottom: .5rem;
     font-weight: 500;
     line-height: 1.2;
@@ -113,6 +128,11 @@ header {
 
 .menu{
     border-top: 1px solid #c1c1c1;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
 }
 
   .menu > nav > ul > li {
@@ -147,7 +167,6 @@ header {
   .content{
     position: relative;
     padding-bottom: 45px;
-    margin-top: -190px;
     display: flex;
   }
 
@@ -155,7 +174,6 @@ header {
     margin-top: 250px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 200px;
     display: flex;
   }
 
@@ -171,7 +189,7 @@ header {
     border-bottom: 2px solid #003e52;
     display: inline-block;
     color: #003e52;
-    font-size: 40px;
+    font-size: 20px;
     letter-spacing: -2px;
   }
   
@@ -185,7 +203,6 @@ footer{
     bottom: 0;
     right: 0;
     left: 0;
-
     width: 100%;
     align-content: center;
     align-items: center;
