@@ -63,7 +63,10 @@ header {
 
 .textocompra > h2{
     align-content: center;
+}
 
+.textocompra > h5{
+    align-content: center;
 }
 
 .paso {
@@ -79,6 +82,62 @@ header {
     opacity: 1.9;
 
 }
+
+.paso3 {
+    width: auto;
+    height: auto;
+    max-width: 45%;
+    border-radius: 4px;
+    box-shadow: 0 0 8px 0 rgba(35, 5, 5, 0.36);
+    opacity: 1.9;
+    color: #003e52;
+    background: white;
+    padding: 34px; 
+}
+
+.paso4 {
+    width: auto;
+    height: auto;
+    max-width: 50%;
+    border-radius: 4px;
+    box-shadow: 0 0 8px 0 rgba(35, 5, 5, 0.36);
+    opacity: 1.9;
+    color: #003e52;
+    background: white;
+    padding: 34px; 
+    float: right;
+}
+
+.caja12 {
+    width: auto;
+    height: auto;
+    max-width: 40%;
+    border-radius: 4px;
+    color: #003e52;
+    background: white;
+    padding: 34px; 
+}
+
+.caja12 > h5{
+    font-size: 30px!important;
+}
+
+
+.caja12 > p{
+    font-size: 40px!important;
+}
+
+.compraProducto{
+    font-size: 18px;
+    color: #57b6b2;
+}
+
+
+.titleD{
+    font-size: 20px;
+    
+}
+
 .paso1 > h2 {
     padding-top: 15px;
 }
@@ -131,14 +190,43 @@ header {
     line-height: 13px;
 }
 
+.botonNaranja{
+    width: 250px; 
+    height: 50px; 
+    background-color:#ff7f30;
+    border-radius: 70px;
+    padding: 20px;
+    font-size: 18px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 13px;
+    margin-top: 7px;
+    margin-right: 17px;
+}
+
+.enlace1{
+    color: #ff7f30;
+    text-decoration: none;
+}
+
 
 .paso2 > h3 {
     padding-left: 15px;
     padding-right: 15px;
 }
 
+.buy{
+    display: flex;
+    flex-direction: row;
+}
+
 
 content {
+    color: #f7f7f7;
+}
+
+.compra {
     color: #f7f7f7;
 }
 
@@ -234,6 +322,12 @@ section {
     display: flex;
 }
 
+
+.compra {
+    position: relative;
+    padding-bottom: 45px;
+}
+
 .headerSection {
     margin-top: 250px;
     display: flex;
@@ -245,15 +339,70 @@ section {
     max-width: 1440px;
 }
 
+.fondoCentral{
+    background-image: url(/imagen/conocenos-background.1abb2e885eddd0fa5475.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
 
+
+.fondoCentral1{
+    background-image: url(/imagen/background-404.86f1dd6045ce9ebf7dd5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    width: auto;
+}
+
+.fondoCentral3{
+    background-image: url(/imagen/tus-datos-background.19cb7c4618a87cef6bc9.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    width: auto;
+    justify-content: flex-end!important;
+}
+
+.lista{
+    margin-bottom: 15px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.listaObjeto{
+    display: flex;
+    align-items: flex-start;
+    margin-right: 5px;
+}
+
+.listaLogo{
+    width: 70px;
+    align-self: center!important;
+    padding-right: 40px;
+
+}
+
+
+.logoCentral{
+    width: 40%;
+}
 
 .textoI {
     border-bottom: 2px solid #003e52;
-    padding-bottom: 10px;
     display: inline-block;
     color: #003e52;
     font-size: 40px;
-    letter-spacing: -2px;
+
 }
 
 .textoD {
@@ -322,4 +471,43 @@ footer {
 
 .empresatexto {
     color: #84a2ab;
+}
+
+.menu2{
+    position: relative;
+    height: 85.4px;
+    border: none;
+    background-color: #fbec7f;
+}
+
+.opciones{
+    cursor: pointer;
+    height: 85.4px;
+    width: 33.3%;
+    border: none;
+    background-color: #fbec7f;
+    color: #51816d;
+    font-size: 18px;
+    text-transform: uppercase;
+    float: left;
+    box-sizing: border-box;
+}
+
+.iconoOpciones{
+    width: 35.4px;
+}
+
+.colorin{
+    color: #57b6b2!important;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a{
+    list-style: none;
+}
+
+.sangria{
+    text-align: justify;
+    flex: 1;
 }
