@@ -8,11 +8,18 @@ header {
     width: 100%;
     box-shadow: 0 0 9px 0 rgba(0, 0, 4, .30);
     z-index: 100;
-    padding-right: 100px;
     background: #fff;
     top: 0;
-    padding-left: 15%;
+    right: 0;
+    left: 0;
+    align-content: center;
     justify-content: center;
+    display: flex;
+
+}
+
+.headerSection {
+    margin-top: 270px;
 }
 
 .menutoptexto {
@@ -339,15 +346,14 @@ section {
     padding-bottom: 45px;
 }
 
-.headerSection {
-    margin-top: 250px;
-    display: flex;
-    flex-wrap: wrap;
-    display: flex;
-}
+
 
 .headerR {
     max-width: 1440px;
+}
+
+.conocenos{
+    display: flex;
 }
 
 .fondoCentral{
@@ -488,22 +494,21 @@ footer {
 
 .menu2{
     position: relative;
-    height: 85.4px;
+    height: 85px;
     border: none;
     background-color: #fbec7f;
 }
 
 .opciones{
     cursor: pointer;
-    height: 85.4px;
-    width: 33.3%;
+    height: 85px;
+    width: 33%;
     border: none;
     background-color: #fbec7f;
     color: #51816d;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     float: left;
-    box-sizing: border-box;
 }
 
 .iconoOpciones{
