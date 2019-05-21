@@ -85,13 +85,13 @@ header {
 }
 
 .paso1 {
-    width: 350px;
-    height: 550px;
+    width: auto;
+    height: auto;
     max-width: 40%;
-    border-radius: 4px;
     box-shadow: 0 0 8px 0 rgba(35, 5, 5, 0.36);
     opacity: 1.9;
-    padding: 25px;
+    padding: 30px;
+    color: #003e52
 }
 
 .paso3 {
@@ -165,7 +165,7 @@ header {
     border-radius: 4px;
     box-shadow: 0 0 8px 0 rgba(35, 5, 5, 0.36);
     opacity: 1.9;
-
+    color: #003e52
 }
 
 .paso2 > h2 {

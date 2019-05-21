@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiénes somos</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,7 +35,7 @@
                 <nav>
                     <ul>
                         <li>Inicio</li>
-                        <li><a href=nutricion.html>Nutrición de Precisión </a></li>
+                        <li><a href=nutricion.html class="colorin">Nutrición de Precisión </a></li>
                         <li>Soluciones BioActivas</li>
                         <li>Quienes Somos</li>
                         <li>Preguntas Frecuentes</li>
@@ -40,75 +44,65 @@
                 </nav>
             </div>
             <div class="menu2">
-                <button class="opciones">
-                    <a class="noestilo" href="#conocenos"><img class="iconoOpciones"
-                            src="imagen/tab-01-conocenos-blue.svg" alt="logo" id="#conocenos"> CONOCENOS</a>
+                <button id="NAVconocenos" class="opciones">
+                    <img class="iconoOpciones" src="imagen/tab-01-conocenos-blue.svg" alt="logo" id="#conocenos"> CONOCENOS
                 </button>
-                <button class="opciones">
-                    <a class="noestilo" href="#empresas"> <img class="iconoOpciones"
-                            src="imagen/TAB-02-colaboradores-blue.svg" alt="logo"> COLABORADORES</a>
+                <button id="NAVempresas" class="opciones">
+                    <img class="iconoOpciones" src="imagen/TAB-02-colaboradores-blue.svg" alt="logo"> COLABORADORES
                 </button>
-                <button class="opciones">
-                    <img class="iconoOpciones" src="imagen/tab-03-tus-datos-blue.svg" alt="logo"> COMO PROTEGEMOS TUS
-                    DATOS
+                <button id="NAVdatos" class="opciones">
+                    <img class="iconoOpciones" src="imagen/tab-03-tus-datos-blue.svg" alt="logo"> COMO PROTEGEMOS TUS  DATOS 
                 </button>
             </div>
         </div>
     </header>
     <section>
-        <div class="sectionMedio" id="conocenos">
-            <div class="headerSection">
-                <div class="textoI">
-                    <p>Conoce el Instituto Central Lechera Asturiana para la Nutrición Personalizada</p>
+        <!-- ALINACION AL MEDIO -->
+        <div class="sectionMedio">
+            <!-- CONOCENOS -->
+            <div id="conocenos">
+                <div class="headerSection">
+                    <div class="textoI">
+                        <p>Conoce el Instituto Central Lechera Asturiana para la Nutrición Personalizada</p>
+                    </div>
                 </div>
-            </div>
-            <div class="content">
-                <!-- AQUI VAN LOS PASOS  -->
-                <div class="compra">
-                    <div class="fondoCentral">
-
-                        <div class="paso3">
-                            <img src="imagen/logo-ienp.svg" class="logoCentral" alt="logo">
-                            <p class="titleD sangria">Desde el <strong>Instituto Central Lechera Asturiana para la
-                                    Nutrición
-                                    Personalizada,</strong>
-                                queremos ayudarte a mejorar tu estado de salud y bienestar a través de la nutrición de
-                                precisión. </p>
-                            <p class="sangria"> Este tipo de nutrición se basa en proporcionar soluciones nutricionales
-                                individuales,
-                                que contribuyan a corregir
-                                los posibles desequilibrios detectados tras el <strong> análisis del microbioma de tu
-                                    intestino. </strong> </p>
-                            <p class="sangria"> Dichos <strong> desequilibrios de la flora intestinal </strong> pueden
-                                afectar a tu
-                                salud y desde el ICLANP te vamos a analizar personalmente
-                                y proponer soluciones relacionadas con : Ayuda a tus defensas, ayuda a controlar la
-                                glucosa plasmática, ayuda a reducir el
-                                colesterol, ayuda a mejorar el disconfort digestivo, ayuda a mejorar el disconfort
-                                intestinal, ayuda a mejorar la regularidad
-                                intestinal o ayuda a complementar la dieta para celiacos. </p>
-                            <p class="sangria"> Queremos proporcionarte una personalización a través de soluciones
-                                nutricionales en base
-                                a microorganismos vivos específicos,
-                                junto con otros ingredientes bioactivos que te ayudaran a corregir los desequilibrios en
-                                tu microbiota para poder mejorar tu salud y
-                                bienestar.</p>
-                            <a href="https://iclanp.com/" class="colorin">Ir a la web > </a>
+                <div class="content">
+                    <!-- AQUI VAN LOS PASOS  -->
+                    <div class="compra">
+                        <div class="fondoCentral">
+                            <div class="paso3">
+                                <img src="imagen/logo-ienp.svg" class="logoCentral" alt="logo">
+                                <p class="titleD sangria">Desde el <strong>Instituto Central Lechera Asturiana para la
+                                        Nutrición
+                                        Personalizada,</strong>
+                                    queremos ayudarte a mejorar tu estado de salud y bienestar a través de la nutrición de
+                                    precisión. </p>
+                                <p class="sangria"> Este tipo de nutrición se basa en proporcionar soluciones nutricionales
+                                    individuales,
+                                    que contribuyan a corregir
+                                    los posibles desequilibrios detectados tras el <strong> análisis del microbioma de tu
+                                        intestino. </strong> </p>
+                                <p class="sangria"> Dichos <strong> desequilibrios de la flora intestinal </strong> pueden
+                                    afectar a tu
+                                    salud y desde el ICLANP te vamos a analizar personalmente
+                                    y proponer soluciones relacionadas con : Ayuda a tus defensas, ayuda a controlar la
+                                    glucosa plasmática, ayuda a reducir el
+                                    colesterol, ayuda a mejorar el disconfort digestivo, ayuda a mejorar el disconfort
+                                    intestinal, ayuda a mejorar la regularidad
+                                    intestinal o ayuda a complementar la dieta para celiacos. </p>
+                                <p class="sangria"> Queremos proporcionarte una personalización a través de soluciones
+                                    nutricionales en base
+                                    a microorganismos vivos específicos,
+                                    junto con otros ingredientes bioactivos que te ayudaran a corregir los desequilibrios en
+                                    tu microbiota para poder mejorar tu salud y
+                                    bienestar.</p>
+                                <a href="https://iclanp.com/" class="colorin">Ir a la web > </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="fondoCentral1">
-                <div class="caja12">
-                    <h5>Adquiere tu test de Microbioma </h5>
-                    <p>248,99€</p>
-                    <div class="buy">
-                        <button class="botonNaranja">Comprar el test > </button>
-                        <p class="compraProducto">Quiero adquirir mi <strong> producto recomendado de nutrición
-                            </strong> de precisión. <a href=nutricion.html class="enlace1"> ¿Qué es esto? </a> </p>
-                    </div>
-                </div>
-            </div>
+            <!-- EMPRESAS COLABORADORAS -->
             <div id="empresas" class="colaboradores">
                 <div class="cola">
                     <div class="textos">
@@ -121,6 +115,7 @@
                                 proporcionándonos una base científica sólida y respaldada con los últimos avances
                                 tecnológicos.</p>
                         </div>
+                        <div class="debajo">Colaboradores científicos, nutricionales y tecnológicos.</div>
                     </div>
                     <div class="paso1">
                         <img class="logoCentral" src="imagen/logo-catedra.png" alt="foto">
@@ -132,7 +127,7 @@
                             Complutense de Madrid a la que también están asociados hospitales como,
                             el Hospital Clínico de San Carlos, El Hospital Universitario 12 de Octubre y el Hospital
                             Universitario Gregorio Marañón.</p>
-                        <a href="https://www.ucm.es/directorio?eid=3059">Ir al sitio web > </a>
+                        <a href="https://www.ucm.es/directorio?eid=3059" class="colorin">Ir al sitio web > </a>
                     </div>
                     <div class="paso1">
                         <img class="logoCentral" src="imagen/logo-capsa.png" alt="foto">
@@ -149,7 +144,7 @@
                             otorgados por el Ministerio de Sanidad, Consumo y
                             Bienestar Social, siendo uno de los de mayor prestigio en el ámbito de la Seguridad
                             Alimentaria y Nutrición.</p>
-                        <a href="http://www.capsa.es/">Ir al sitio web > </a>
+                        <a href="http://www.capsa.es/" class="colorin">Ir al sitio web > </a>
                     </div>
                     <div class="paso1">
                         <img class="logoCentral" src="imagen/logo-darwin.png" alt="foto">
@@ -162,7 +157,7 @@
                             y medioambiente. Para ello, el equipo de DARWIN dispone de amplia experiencia en el
                             estudio de la ecología microbiana, y un dominio intensivo de técnicas microbiológicas y de
                             análisis de datos de secuenciación masiva.</p>
-                        <a href="http://darwinbioprospecting.com/">Ir al sitio web > </a>
+                        <a href="http://darwinbioprospecting.com/" class="colorin">Ir al sitio web > </a>
                     </div>
                     <div class="paso1">
                         <img class="logoCentral" src="imagen/logo-sngular.png" alt="foto">
@@ -172,28 +167,28 @@
                             la combinación de numerosas capacidades digitales, tanto técnicas como metodológicas,
                             y gracias a una cultura ágil e innovadora que fomenta la creatividad, la iniciativa y la
                             colaboración abierta.</p>
-                        <a href="https://www.sngular.com/">Ir al sitio web > </a>
+                        <a href="https://www.sngular.com/" class="colorin" >Ir al sitio web > </a>
                     </div>
                 </div>
             </div>
-            <div class="compra">
+            <!-- TRATAMIENTO DE DATOS -->
+            <div id="datos" class="compra">
                 <div class="fondoCentral3">
                     <div class="paso3">
                         <div class="textoI">
                             <p>Cómo protegemos tus datos</p>
                         </div>
                         <h3 class="sangria"> La aplicación se basa en mecanismos generales y particulares que
-                            garantizan la  seguridad y la anonimización de toda la información recogida.</h3>
+                            garantizan la seguridad y la anonimización de toda la información recogida.</h3>
                         <ul class="lista">
                             <li class="listaObjeto"><img src="imagen/tusdatos-01-icon.svg" alt="logo" class="listaLogo">
                                 <p class="sangria">Todos los datos sensibles que se almacenan son separados y
-                                    encriptados. </p>
+                                    encriptados.</p>
                             </li>
                             <li class="listaObjeto"><img src="imagen/tusdatos-02-icon.svg" alt="logo" class="listaLogo">
                                 <p class="sangria">En el caso del Test de Microbioma, el proceso de gestión de
                                     muestras se basa en identificadores únicos que anonimizan tanto las muestras
-                                    como
-                                    los resultados, por lo que <strong>nutricionistas</strong>, personal de
+                                    como los resultados, por lo que <strong>nutricionistas</strong>, personal de
                                     laboratorio y operarios de gestión no pueden identificar las muestras.</p>
                             </li>
                             <li class="listaObjeto"><img src="imagen/tusdatos-03-icon.svg" alt="logo" class="listaLogo">
@@ -212,6 +207,19 @@
                     </div>
                 </div>
             </div>
+            <!-- PRODUCTO A COMPRAR -->
+            <div class="fondoCentral1">
+                    <div class="caja12">
+                        <h5>Adquiere tu test de Microbioma </h5>
+                        <p>248,99€</p>
+                        <div class="buy">
+                            <button class="botonNaranja">Comprar el test > </button>
+                            <p class="compraProducto">Quiero adquirir mi <strong> producto recomendado de nutrición
+                                </strong> de precisión. <a href=nutricion.html class="enlace1"> ¿Qué es esto? </a> </p>
+                        </div>
+                    </div>
+            </div>
+            <!-- BOLETIN DE NOTICIAS -->
             <div class="boletin">
                 <div class="pie">
                     <div class="empresa">
@@ -230,7 +238,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <footer>
@@ -273,5 +280,44 @@
         </div>
     </footer>
 </body>
+<script>
+
+//CONOCENOS
+$('#NAVconocenos').click(function(e) {
+  // Resetear, por si acaso has estado jugando con la otra propiedad
+  $('#conocenos').css('visibility', 'visible');
+  
+  if( $('#conocenos').is(":visible") ) {
+    $('#conocenos').css('display', 'none'); 
+  } else {
+    $('#conocenos').css('display', 'block');
+  }
+});
+
+//EMPRESAS COLABORADORAS
+$('#NAVempresas').click(function(e) {
+  // Resetear, por si acaso has estado jugando con la otra propiedad
+  $('#empresas').css('visibility', 'visible');
+  
+  if( $('#empresas').is(":visible") ) {
+    $('#empresas').css('display', 'none'); 
+  } else {
+    $('#empresas').css('display', 'block');
+  }
+});
+
+//TRATAMIENTO DE DATOS
+$('#NAVdatos').click(function(e) {
+  // Resetear, por si acaso has estado jugando con la otra propiedad
+  $('#datos').css('visibility', 'visible');
+  
+  if( $('#datos').is(":visible") ) {
+    $('#datos').css('display', 'none'); 
+  } else {
+    $('#datos').css('display', 'block');
+  }
+});
+
+</script>
 
 </html>
