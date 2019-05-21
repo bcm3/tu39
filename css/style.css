@@ -56,6 +56,17 @@ header {
     padding: 32px;
     justify-content: space-between;
 }
+
+.cola {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 32px;
+    justify-content: space-between;
+    color: #003e52;
+}
 .textocompra{
     flex-direction: column;
     margin-bottom: 50px;
@@ -74,13 +85,13 @@ header {
 }
 
 .paso1 {
-    width: auto;
-    height: auto;
-    max-width: 45%;
+    width: 350px;
+    height: 550px;
+    max-width: 40%;
     border-radius: 4px;
     box-shadow: 0 0 8px 0 rgba(35, 5, 5, 0.36);
     opacity: 1.9;
-
+    padding: 25px;
 }
 
 .paso3 {
@@ -397,16 +408,18 @@ section {
     width: 40%;
 }
 
+.textos{
+    display: flex;
+}
+
 .textoI {
     border-bottom: 2px solid #003e52;
     display: inline-block;
     color: #003e52;
     font-size: 40px;
-
 }
 
 .textoD {
-    border-bottom: 2px solid #003e52;
     display: inline-block;
     color: #003e52;
     font-size: 20px;
