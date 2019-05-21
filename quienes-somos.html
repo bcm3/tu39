@@ -11,6 +11,8 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="imagen/39ytu-favicon.ico" >
+
 </head>
 
 <body>
@@ -26,7 +28,7 @@
                         <ul>
                             <li>Contacto</li>
                             <li>Inicio de sesión</li>
-                            <li>Carro</li>
+                            <li><img src="imagen/cart-icon.svg" alt="carro" class="logocarro"></li>
                         </ul>
                     </nav>
                 </div>
@@ -35,7 +37,7 @@
                 <nav>
                     <ul>
                         <li>Inicio</li>
-                        <li><a href=nutricion.html class="colorin">Nutrición de Precisión </a></li>
+                        <li><a href=nutricion.html>Nutrición de Precisión </a></li>
                         <li>Soluciones BioActivas</li>
                         <li>Quienes Somos</li>
                         <li>Preguntas Frecuentes</li>
@@ -213,9 +215,9 @@
                         <h5>Adquiere tu test de Microbioma </h5>
                         <p>248,99€</p>
                         <div class="buy">
-                            <button class="botonNaranja">Comprar el test > </button>
-                            <p class="compraProducto">Quiero adquirir mi <strong> producto recomendado de nutrición
-                                </strong> de precisión. <a href=nutricion.html class="enlace1"> ¿Qué es esto? </a> </p>
+                            <button class="botonNaranja"><img src="imagen/cart-icon.svg" class="logocarro" alt="logo">  Comprar el test</button>
+                            <p class="compraProducto"> Quiero adquirir mi <strong> producto recomendado de nutrición
+                                </strong> de precisión.<a href=nutricion.html class="enlace1"> ¿Qué es esto? </a> </p>
                         </div>
                     </div>
             </div>
@@ -285,7 +287,7 @@
 //CONOCENOS
 $('#NAVconocenos').click(function(e) {
   // Resetear, por si acaso has estado jugando con la otra propiedad
-  $('#conocenos').css('visibility', 'visible');
+  $('#cownocenos').css('visibility', 'visible');
   
   if( $('#conocenos').is(":visible") ) {
     $('#conocenos').css('display', 'none'); 

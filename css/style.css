@@ -202,16 +202,16 @@ header {
 }
 
 .botonNaranja{
-    width: 250px; 
-    height: 50px; 
+    width: 270px; 
+    height: 90px; 
     background-color:#ff7f30;
     border-radius: 70px;
     padding: 20px;
-    font-size: 18px;
+    font-size: 15px;
     color: #fff;
     padding-left: 20px;
     padding-right: 20px;
-    line-height: 13px;
+    line-height: 10px;
     margin-top: 7px;
     margin-right: 17px;
 }
@@ -523,4 +523,12 @@ a{
 .sangria{
     text-align: justify;
     flex: 1;
+}
+
+.logocarro{
+    height: 25px;
+    width: 25px;
+}
+
+a:active{ color: red; 
 }
