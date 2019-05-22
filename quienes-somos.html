@@ -46,7 +46,7 @@
                 </nav>
             </div>
             <div class="menu2">
-                <button id="NAVconocenos" class="opciones">
+                <button id="NAVconocenos" class="opciones"><a href="#conocenos"></a>
                     <img class="iconoOpciones" src="imagen/tab-01-conocenos-blue.svg" alt="logo" id="#conocenos"> CONOCENOS
                 </button>
                 <button id="NAVempresas" class="opciones">
@@ -174,7 +174,7 @@
                 </div>
             </div>
             <!-- TRATAMIENTO DE DATOS -->
-            <div id="datos" class="compra">
+            <div id="datos" class="compra" display="none">
                 <div class="fondoCentral3">
                     <div class="paso3">
                         <div class="textoI">
@@ -284,6 +284,12 @@
 </body>
 <script>
 
+//al principio estas dos capas ocultas
+$(document).ready(function(){ 
+ $("#empresas").hide();
+ $("#datos").hide(); 
+});
+
 //CONOCENOS
 $('#NAVconocenos').click(function(e) {
   // Resetear, por si acaso has estado jugando con la otra propiedad
@@ -308,7 +314,7 @@ $('#NAVempresas').click(function(e) {
   }
 });
 
-//TRATAMIENTO DE DATOS
+
 $('#NAVdatos').click(function(e) {
   // Resetear, por si acaso has estado jugando con la otra propiedad
   $('#datos').css('visibility', 'visible');
