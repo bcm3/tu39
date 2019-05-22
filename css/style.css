@@ -547,3 +547,18 @@ a{
 
 a:active{ color: red; 
 }
+
+.flecha{
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 34px;
+    line-height: 47px;
+    cursor: pointer;
+    background-color: #57b6b2;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 51px;
+    height: 51px;
+    top: -25px;
+}

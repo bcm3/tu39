@@ -8,6 +8,17 @@
     <title>Nutrición de precisión</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="shortcut icon" href="imagen/39ytu-favicon.ico" >
+
+    <style>
+    .active, .li:hover {
+        background-color: #57b6b2;
+        color: white;
+    }  
+    </style>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
 </head>
 
 <body>
@@ -31,12 +42,12 @@
             <div class="menu">
                 <nav>
                     <ul>
-                        <li>Inicio</li>
-                        <li>Nutrición de Precisión</li>
-                        <li>Soluciones BioActivas</li>
-                        <li><a href="quienes-somos.html" class="colorin">Somos</li></a>
-                        <li>Preguntas Frecuentes</li>
-                        <li>Articulos</li>
+                        <li class="li active">Inicio</li>
+                        <li class="li">Nutrición de Precisión</li>
+                        <li class="li">Soluciones BioActivas</li>
+                        <li class="li"><a href="quienes-somos.html" class="colorin">Somos</li></a>
+                        <li class="li">Preguntas Frecuentes</li>
+                        <li class="li">Articulos</li>
                     </ul>
                 </nav>
             </div>
@@ -173,9 +184,21 @@
                         Cookies
                         Todos los derechos reservados, 2019.</p>
                 </div>
+                <div class="flecha">
+                    <i onclick="topFunction()" class="fas fa-arrow-up"></i>
+                </div>
             </div>
         </div>
     </footer>
 </body>
+
+<script>
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
 
 </html>
