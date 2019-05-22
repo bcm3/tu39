@@ -19,7 +19,7 @@ header {
 }
 
 .headerSection {
-    margin-top: 290px;
+    margin-top: 310px;
 }
 
 .menutoptexto {
@@ -274,7 +274,7 @@ content {
     padding-bottom: 30px;
     text-align: center;
     align-content: center;
-    margin-top: 290px;
+    margin-top: 215px;
 }
 
 .empresascolaboradoras {
@@ -427,22 +427,19 @@ section {
     width: 40%;
 }
 
-.textos{
-    display: flex;
-}
-
 .textoI {
     border-bottom: 2px solid #003e52;
-    display: inline-block;
     color: #003e52;
     font-size: 40px;
 }
 
 .textoD {
-    display: inline-block;
     color: #003e52;
     font-size: 20px;
     letter-spacing: -2px;
+}
+.debajo{
+    flex-direction: column;
 }
 
 .logo {

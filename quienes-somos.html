@@ -47,13 +47,13 @@
             </div>
             <div class="menu2">
                 <button id="NAVconocenos" class="opciones"><a href="#conocenos"></a>
-                    <img class="iconoOpciones" src="imagen/tab-01-conocenos-blue.svg" alt="logo" id="#conocenos"> CONOCENOS
+                    <img id="conocenosImagen" class="iconoOpciones" src="imagen/tab-01-conocenos-green.svg" alt="logo" id="#conocenos"> CONOCENOS
                 </button>
                 <button id="NAVempresas" class="opciones">
-                    <img class="iconoOpciones" src="imagen/TAB-02-colaboradores-blue.svg" alt="logo"> COLABORADORES
+                    <img id="colaboradoresImagen"class="iconoOpciones" src="imagen/TAB-02-colaboradores-green.svg" alt="logo"> COLABORADORES
                 </button>
                 <button id="NAVdatos" class="opciones">
-                    <img class="iconoOpciones" src="imagen/tab-03-tus-datos-blue.svg" alt="logo"> COMO PROTEGEMOS TUS  DATOS 
+                    <img id="datosImagen" class="iconoOpciones" src="imagen/tab-03-tus-datos-green.svg" alt="logo"> COMO PROTEGEMOS TUS  DATOS 
                 </button>
             </div>
         </div>
@@ -117,7 +117,9 @@
                                 proporcionándonos una base científica sólida y respaldada con los últimos avances
                                 tecnológicos.</p>
                         </div>
-                        <div class="debajo">Colaboradores científicos, nutricionales y tecnológicos.</div>
+                        <div class="debajo">
+                            <p class="sangria">Colaboradores científicos, nutricionales y tecnológicos.</p>
+                        </div>
                     </div>
                     <div class="paso1">
                         <img class="logoCentral" src="imagen/logo-catedra.png" alt="foto">
@@ -293,16 +295,23 @@ $(document).ready(function(){
 //CONOCENOS
 $('#NAVconocenos').click(function(e) {
 
-    $("#empresas").hide();
+  $("#empresas").hide();
   $("#datos").hide();
   // Resetear, por si acaso has estado jugando con la otra propiedad
-  $('#cownocenos').css('visibility', 'visible');
+  $('#conocenos').css('visibility', 'visible');
   
   if( $('#conocenos').is(":visible") ) {
     $('#conocenos').css('display', 'none'); 
   } else {
     $('#conocenos').css('display', 'block');
-  }
+  }  
+  
+  //cambio de imagen
+  $('#conocenosImagen').replaceWith('<img id="conocenosImagen" src="imagen/tab-01-conocenos-blue.svg" width="35.4px" alt="imagen_cambiada">');
+  $('#colaboradoresImagen').replaceWith('<img id="colaboradoresImagen" src="imagen/TAB-02-colaboradores-green.svg" width="35.4px" alt="imagen_cambiada">');
+  $('#datosImagen').replaceWith('<img id="colaboradoresImagen" src="imagen/tab-03-tus-datos-green.svg" width="35.4px" alt="imagen_cambiada">');
+
+
 });
 
 //EMPRESAS COLABORADORAS
@@ -311,19 +320,27 @@ $('#NAVempresas').click(function(e) {
   $("#conocenos").hide();
   $("#datos").hide();
   $('#empresas').css('visibility', 'visible');
-  
+
+    //cambio de imagen
+  $('#conocenosImagen').replaceWith('<img id="conocenosImagen" src="imagen/tab-01-conocenos-green.svg" width="35.4px" alt="imagen_cambiada">');
+  $('#datosImagen').replaceWith('<img id="colaboradoresImagen" src="imagen/tab-03-tus-datos-green.svg" width="35.4px" alt="imagen_cambiada">');
+  $('#colaboradoresImagen').replaceWith('<img id="colaboradoresImagen" src="imagen/TAB-02-colaboradores-blue.svg" width="35.4px" alt="imagen_cambiada">');
+
+
+
   if( $('#empresas').is(":visible") ) {
     $('#empresas').css('display', 'none'); 
   } else {
     $('#empresas').css('display', 'block');
   }
+
 });
 
-
+//TRATAMIENTO DE DATOS
 $('#NAVdatos').click(function(e) {
     $("#empresas").hide();
     $("#conocenos").hide();
-
+    
   // Resetear, por si acaso has estado jugando con la otra propiedad
   $('#datos').css('visibility', 'visible');
   
@@ -332,6 +349,11 @@ $('#NAVdatos').click(function(e) {
   } else {
     $('#datos').css('display', 'block');
   }
+
+    //cambio de imagen
+  $('#conocenosImagen').replaceWith('<img id="conocenosImagen" src="imagen/tab-01-conocenos-green.svg" width="35.4px" alt="imagen_cambiada">');
+  $('#colaboradoresImagen').replaceWith('<img id="colaboradoresImagen" src="imagen/TAB-02-colaboradores-green.svg" width="35.4px" alt="imagen_cambiada">');
+  $('#datosImagen').replaceWith('<img id="datosImagen" src="imagen/tab-03-tus-datos-blue.svg" width="35.4px" alt="imagen_cambiada">');
 });
 
 </script>
