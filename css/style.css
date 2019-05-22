@@ -147,7 +147,7 @@ header {
     color: #003e52;
     background: white;
     padding: 34px; 
-    margin-bottom: 20px,
+    margin-bottom: 20px;
 }
 
 .caja12 {
@@ -558,8 +558,6 @@ a{
     width: 25px;
 }
 
-a:active{ color: red; 
-}
 
 .flecha{
     color: #fff;
@@ -604,7 +602,6 @@ a:active{ color: red;
 
   .accordion:after {
     content: '\002B';
-    color: #777;
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -620,3 +617,8 @@ a:active{ color: red;
     background-color: white;
     overflow: hidden;
   }
+
+  .active, .li:hover {
+    background-color: #57b6b2;
+    color: white;
+}  
