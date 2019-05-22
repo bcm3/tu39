@@ -174,7 +174,7 @@
                 </div>
             </div>
             <!-- TRATAMIENTO DE DATOS -->
-            <div id="datos" class="compra" display="none">
+            <div id="datos" class="trataminetoDatos" display="none">
                 <div class="fondoCentral3">
                     <div class="paso3">
                         <div class="textoI">
@@ -292,6 +292,9 @@ $(document).ready(function(){
 
 //CONOCENOS
 $('#NAVconocenos').click(function(e) {
+
+    $("#empresas").hide();
+  $("#datos").hide();
   // Resetear, por si acaso has estado jugando con la otra propiedad
   $('#cownocenos').css('visibility', 'visible');
   
@@ -305,6 +308,8 @@ $('#NAVconocenos').click(function(e) {
 //EMPRESAS COLABORADORAS
 $('#NAVempresas').click(function(e) {
   // Resetear, por si acaso has estado jugando con la otra propiedad
+  $("#conocenos").hide();
+  $("#datos").hide();
   $('#empresas').css('visibility', 'visible');
   
   if( $('#empresas').is(":visible") ) {
@@ -316,6 +321,9 @@ $('#NAVempresas').click(function(e) {
 
 
 $('#NAVdatos').click(function(e) {
+    $("#empresas").hide();
+    $("#conocenos").hide();
+
   // Resetear, por si acaso has estado jugando con la otra propiedad
   $('#datos').css('visibility', 'visible');
   
