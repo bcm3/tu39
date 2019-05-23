@@ -162,12 +162,12 @@ header {
 }
 
 .caja12 > h5{
-    font-size: 30px!important;
+    font-size: 30px !important;
 }
 
 
 .caja12 > p{
-    font-size: 40px!important;
+    font-size: 40px !important;
 }
 
 .compraProducto{
@@ -234,8 +234,8 @@ header {
 }
 
 .botonNaranja{
-    width: 270px; 
-    height: 90px; 
+    width: 310px; 
+    height: 70px; 
     background-color:#ff7f30;
     border-radius: 70px;
     padding: 20px;
@@ -357,6 +357,10 @@ section {
     max-width: 1250px;
 }
 
+.sectionMedioF {
+    max-width: 1250px;
+}
+
 .content {
     position: relative;
     padding-bottom: 45px;
@@ -367,8 +371,6 @@ section {
 .compra {
     position: relative;
 }
-
-
 
 .headerR {
     max-width: 1440px;
@@ -522,6 +524,10 @@ footer {
     background-color: #fbec7f;
 }
 
+.opciones:hover{
+    background-color: #fae345;
+}
+
 .opciones{
     cursor: pointer;
     height: 85px;
@@ -533,6 +539,7 @@ footer {
     text-transform: uppercase;
     float: left;
 }
+
 
 .iconoOpciones{
     width: 35.4px;
@@ -558,7 +565,6 @@ a{
     width: 25px;
 }
 
-
 .flecha{
     color: #fff;
     display: inline-block;
@@ -582,10 +588,9 @@ a{
     padding-bottom: 60px;
 }
 
-
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: white ;
+    border: #51816d solid 1px;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -597,7 +602,7 @@ a{
   }
   
   .active, .accordion:hover {
-    background-color: #ccc; 
+    background-color:#57b6b2; 
   }
 
   .accordion:after {
@@ -618,7 +623,47 @@ a{
     overflow: hidden;
   }
 
-  .active, .li:hover {
-    background-color: #57b6b2;
-    color: white;
-}  
+
+
+@media (max-width: 1120px) {
+    .conocenos{
+        margin-top: 380px;
+    }
+
+    .headerSection{
+        margin-top: 380px;
+    }
+
+    #datos{
+        margin-top: 390px;
+    }
+
+    .trataminetoDatos{
+        margin-top: 390px;
+    }
+
+    .fondoCentralFrecuentes{
+        margin-top: 240px
+    }
+
+    .sectionMedioF{
+        margin-top: -330px;
+    }
+
+@media (max-width: 600px) {
+    .conocenos{
+        margin-top: 480px;
+    }
+
+    .headerSection{
+        margin-top: 480px;
+    }
+
+    #datos{
+        margin-top: 390px;
+    }
+
+    .trataminetoDatos{
+        margin-top: 390px;
+    }
+}
