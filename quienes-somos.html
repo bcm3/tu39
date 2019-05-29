@@ -233,19 +233,36 @@
                         <p>Mantente al día sobre nutrición, ciencia y hábitos saludables.</p>
                     </div>
                     <div class="redes_sociales">
-                        <p>Dejanos tu email</p>
-                        <p>He leído y acepto la política de privacidad y las condiciones del tratamiento de mis
-                            datos
-                            personales.</p>
+                        <form action="">
+                        <input type="email" class="email" placeholder="Déjanos tu email">
+                        <input type="checkbox" id="radio" class="radio highlight"><p class="sangria condiciones">He leído y acepto
+                            <a class="colorin" href="https://www.39ytu.com/politica-privacidad/newsletter">la política de privacidad y las condiciones del tratamiento de mis
+                            datos personales.</a></p></input>
+                            <!-- <div id="popup" style="display: none;">
+                                <div id="popup" class="overlay">
+                                    <div id="popupBody">
+                                        <a id="cerrar" href="#">&times;</a>
+                                        <div class="popupContent">
+                                            <p>En breves recibiras mogollón de noticias chulas &#128512</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup-overlay"></div> -->                      
                     </div>
                     <div class="empresa">
                         <button class="boton2">Enviar</button>
                     </div>
                 </div>
+            </form>
             </div>
         </div>
     </section>
-    <footer>
+    <footer>            
+            <div class="flecha">
+                    <i onclick="topFunction()" class="fas fa-arrow-up"></i>
+                </div>
+
         <div class="container">
             <div class="enlaces">
                 <ul>
@@ -281,9 +298,7 @@
                         Cookies
                         Todos los derechos reservados, 2019.</p>
                 </div>
-                <div class="flecha">
-                        <i onclick="topFunction()" class="fas fa-arrow-up"></i>
-                </div>
+
             </div>
         </div>
     </footer>
@@ -291,7 +306,34 @@
 <script>
 
 //al principio estas dos capas ocultas
-$(document).ready(function(){ 
+$(document).ready(function(){
+
+    // $('input:radio').change(function(){
+    //     var $this = $(this);
+ 	// 	$this.closest('.redes_sociales').find('div.highlight').removeClass('highlight');
+    //     $this.closest('.option').addClass('highlight');
+    // });
+
+    $("button").click(function(){
+        if($('#radio').is(':checked')){
+            $(".condiciones").css("color", "black");
+        }
+        else {
+            $(".condiciones").css("color", "red");
+            $(".condiciones").css("font-weight", "bold");
+            $(".email").css("color", "red");
+
+
+              
+        }
+
+        $('#close').on('click', function(){
+        $('#popup').fadeOut('slow');
+        $('.popup-overlay').fadeOut('slow');
+        return false;
+    });
+  });
+
  $("#empresas").hide();
  $("#datos").hide(); 
 });
